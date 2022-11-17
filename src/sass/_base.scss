@@ -1,10 +1,14 @@
+@font-face {
+  font-family: 'roboto', sans-serif;
+  // src: url('/fonts/OpenSans-Regular-webfont.woff2') format('woff2');
+}
+
 body {
-  // font-family: $mainFont;
-  // font-size: $primaryFontSize;
-  // font-weight: 400;
-  // // letter-spacing: 0.03em;
-  // background-color: $bodyBgColor;
-  // color: $primaryTextColor;
+  font-family: 'roboto', sans-serif;
+  font-size: $primaryFontSize;
+  font-weight: 600;
+  background-color: $bodyBgColor;
+  color: $primaryTextColor;
 }
 
 h1,
@@ -26,7 +30,8 @@ ul {
   margin: 0;
 }
 
-li {
+li,
+ul {
   list-style: none;
 }
 
