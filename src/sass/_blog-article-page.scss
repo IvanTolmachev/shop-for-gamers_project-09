@@ -1,0 +1,128 @@
+.blog-article {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 40px;
+  padding-bottom: 48px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.blog-article-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #ffffff;
+  margin-bottom: 31px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1;
+  }
+}
+
+.blog-article-images {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 12px;
+    margin-bottom: 0;
+  }
+}
+
+.img-content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+  }
+}
+
+.img-text {
+  // flex-direction: column;
+  display: inline-block;
+}
+
+.blog-article-subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  color: #ffffff;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+    color: #86e543;
+    word-break: break-all;
+    margin-bottom: 32px;
+  }
+}
+
+.blog-article-desc {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  color: #8d9289;
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+    word-break: break-all;
+    margin-bottom: 0;
+  }
+}
+.blog-article-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.blog-article-subject {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    color: #86e543;
+  }
+}
+
+.blog-article-list-sub {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #ffffff;
+  text-indent: 10px;
+  @media screen and (min-width: 768px) {
+    color: #86e543;
+  }
+}
+
+.blog-article-list {
+  color: #ffffff;
+  padding: 0;
+  margin: 0 0 16px 16px;
+}
+
+.blog-article-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  list-style: decimal;
+  color: #ffffff;
+  @media screen and (min-width: 768px) {
+    color: #86e543;
+  }
+}
