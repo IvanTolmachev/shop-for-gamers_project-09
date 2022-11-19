@@ -2,7 +2,6 @@
 
 // Cсылка на пример использования модального окна https://codepen.io/dan_postnov/pen/gjBqPb
 
-
 .overlay {
   /* Скрываем подложку  */
   opacity: 0;
@@ -63,16 +62,4 @@
   right: 20px;
   fill: #444;
   cursor: pointer;
-}
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-
-a {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
 }
