@@ -10,7 +10,7 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        padding: 0 80px;
+        padding: 120 80px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -44,13 +44,16 @@
 
 .sale-item {
     width: 100%;
+    // @include mobile {
+
+    // }
     @include tablet {
     width: calc((100% - 38px)/2);
     }
     @include desktop {
     width: calc((100% - 60px)/4);
     }
-    
+    outline: 1px solid tomato;
 }
 
 .sale-item:nth-child(n+5) {
@@ -67,11 +70,14 @@
 }
 
 .sale-title {
+    max-width: 261px;
     margin-top: 8px;
     margin-bottom: 8px;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 1.18;
     color: $hoverColor;
+    padding-left: 8px;
+    padding-right: 16px;
 }
 
 .sale-old-price {
@@ -91,9 +97,15 @@
     display: flex;
     gap: 80px;
     align-items: center;
+    padding-left: 8px;
+    padding-right: 15px;
+    padding-bottom: 8px;
 }
 
 .sale-btn {
+    display: flex;
+    max-width: 153px;
+    
     cursor: pointer;
     padding: 16px 48px;
     font-weight: 700;
@@ -102,5 +114,59 @@
     color: $primaryBgColor;
     background-color: $secondaryTextColor;
     border-radius: 16px;
-    // margin-top: 44px;
+    margin-top: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    @include tablet {
+        font-size: 28px;
+        line-height: 1.18;
+        max-width: 195px;
+    }
 }
+
+// .sale-bg {
+//     background-color: $primaryBgColor;
+//     // background-color: transparent;
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center bottom;
+
+//     background-image: url(../images/accessories-page/accessories_m-1x.jpg);
+
+//     @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         & {
+//             background-image:
+//                 url(../images/accessories-page/accessories_m-2x.jpg);
+//         }
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         background-size: 768px;
+//         background-image: url(../images/accessories-page/accessories_t-1x.jpg);
+
+
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             & {
+//                 background-image: url(../images/accessories-page/accessories_t-2x.jpg);
+//             }
+//         }
+//     }
+
+//     @media screen and (min-width: 1280px) {
+//         background-size: 1280px;
+//         background-image: url(../images/accessories-page/accessories_d-1x.jpg);
+
+//         @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             & {
+//                 background-image: url(../images/accessories-page/accessories_d-2x.jpg);
+//             }
+//         }
+//     }
+// }
